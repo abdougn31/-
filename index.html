@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدرسة الشاطبة لتحفيظ القران و اقرائه</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <header>
+            <nav>
+                <div class="nav-button">
+                    <a href="#"><button class="btn" id="loginBtn">دخول <i id="bac"
+                                class="fa-solid fa-right-to-bracket"></i></button></a>
+                    <a href="#"><button class="btn" id="registerBtn">تسجيل <i id="bac"
+                                class="fa-solid fa-user"></i></button></a>
+
+                </div>
+                <ul class="links">
+                    <li><a href="portfolio.html">تواصل معنا</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="index.html">الرئيسية</a></li>
+                </ul>
+                <div class="social-media">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <i id="btnmenu" class="fa-solid fa-bars"></i>
+            </nav>
+        </header>
+
+        <div class="hero-sec">
+            <div class="container">
+                <div class="div-img">
+                    <img src="FB_IMG_1712535598681-removebg-preview.png" alt="">
+                </div>
+                <div class="div-text">
+                    <h1>المدرسة الشاطبية</h1>
+                    <span>لتحفيض القران و اقرا ئه</span>
+
+                </div>
+    </section>
+    <section>
+        <script>
+            let btnmenu = document.getElementById("btnmenu");
+            let navlinks = document.querySelector(".links");
+
+            btnmenu.onclick = function () {
+                btnmenu.classList.toggle("fa-times");
+                navlinks.classList.toggle("active");
+            }
+        </script>
+    </section>
+    </div>
+    </div>
+</body>
+
+</html>

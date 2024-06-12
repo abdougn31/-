@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgb(191, 191, 191);
+    z-index: 100;
+    background-color: rgb(213, 213, 213);
+}
+header nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    height: 80px;
+}
+header nav a {
+    position: relative;
+    justify-content: space-between;
+    display: inline-block;
+}
+header .nav-button {
+    position: relative;
+    justify-content: space-between;
+    display: inline-block;
+
+}
+
+header .btn {
+    color: black;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #fff;
+    border: 1px solid brown;
+    background-color: brown;
+    border-radius: 25px;
+    transition: 0.3s;
+    padding: 5px 10px;
+    margin: 1px;
+    font-family: "Marhey", sans-serif;
+
+}
+
+header .btn i {
+    color: #bea413;
+    font-size: 18px;
+    margin-left: 4px;
+
+}
+
+header nav .links {
+    display: flex;
+}
+
+header nav .links li {
+    position: relative;
+    margin: 0 25px;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+}
+
+header nav .links li a {
+    color: black;
+    font-size: 17px;
+    font-family: "Marhey", sans-serif;
+
+}
+header nav .links li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color:#bea413;
+    transition: 0.3s;
+}
+header nav .links li a:hover::after {
+    width: 100%;
+}
+ header nav .social-media a i {
+    color: brown;
+    font-size: 24px;
+    
+}
+
+
+header nav .social-media a i:hover{
+    color: #000000;
+    transform: 0.5s;
+}
+
+
+
+
+.hero-sec {
+    height: 100vh;
+    background-position: right;
+    overflow: hidden;
+    background-image: url(back.png) ;
+}
+
+.hero-sec .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: left;
+    height: 100%;
+} 
+
+.hero-sec .container .div-text{
+    width: 50%;
+}
+.hero-sec .container .div-text h1{
+    color: #000000;
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-family: "Noto Nastaliq Urdu", serif;
+}
+.hero-sec .container .div-text span {
+    color:brown ;
+    font-size: 40px;
+    margin: 30px;
+    font-family: "Marhey", sans-serif;
+  
+}
+
+
+.hero-sec .container .div-text a {
+    color: #000000;
+    border: 1px solid brown;
+    background-color: brown;
+    border-radius: 5px;
+    transition: 0.3s;
+    padding: 10px 20px;
+    margin-left: 50%;
+    margin-bottom: 40px;
+}
+
+.hero-sec .container .div-text a:hover {
+    background-color: transparent;
+    
+}
+
+.hero-sec .container .div-img {
+    width: 35%;
+    position: right;
+    bottom: 100px;
+    right: 0;
+}
+
+.hero-sec .container .div-img img {
+    width: 100%;
+}
+#btnmenu{
+    display: none;
+}
+@media (max-width:950px){
+    header nav .links {
+        position: absolute;
+        top: 100%;
+        right: -420px;
+        flex-direction: column;
+        background-color: rgb(213, 213, 213);
+        border-left: 1px solid #444444a8;
+        width: 400px;
+        height: 1000px;
+        text-align: center;
+        padding: 20px 0;
+        transition: 0.3s;
+        overflow-y: scroll;
+    }
+    header nav .links.active{
+        right: 0;
+    }
+    .social-media{
+        display: none;
+       }
+       .hero-sec{
+        height: auto;
+    }
+    .hero-sec .container {
+        flex-direction: column;
+    }
+    
+    .hero-sec .container .div-text{
+        width: 80%;
+       position: relative;
+        margin-bottom: 300px;
+        text-align: center;
+    }
+    .hero-sec .container .div-img{
+        position: relative;
+        width: 50%;
+        margin-top: 200px;
+    }
+    .hero-sec .container .div-text h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    #btnmenu{
+        display: block;
+        color: brown;
+        font-size: 30px;
+    
+    }
+}
+
+@media (max-width:500px){
+
+    .social-media{
+        display: none;
+       }
+       .hero-sec{
+        height: auto;
+    }
+    .hero-sec .container {
+        flex-direction: column;
+    }
+    
+    .hero-sec .container .div-text{
+        width: 100%;
+       position: relative;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .hero-sec .container .div-img{
+        position: relative;
+        width: 70%;
+        margin-top: 250px;
+    }
+    .hero-sec .container .div-text h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .hero-sec .container .div-text span {
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+}
+@media (max-width:380px){
+    header nav .links {
+        position: absolute;
+        top: 100%;
+        right: -380px;
+        flex-direction: column;
+        background-color: rgb(213, 213, 213);
+        border-left: 1px solid #444444a8;
+        width: 100%;
+        height: 800px;
+        text-align: center;
+        padding: 20px 0;
+        transition: 0.3s;
+        overflow-y: scroll;
+    }
+    .hero-sec .container .div-text{
+        width: 100%;
+       position: relative;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .hero-sec .container .div-text h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .hero-sec .container .div-text span {
+        font-size: 22px;
+        text-align: center;
+    }
+
+}
